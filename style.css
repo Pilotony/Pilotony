@@ -1,0 +1,179 @@
+/* FONT */
+@font-face{
+	font-family: 'MAGNETOB';
+	src: url('MAGNETOB/MAGNETOB.ttf') format ('truetype');
+	src: local('MAGNETOB'), url('MAGNETOB/MAGNETOB.woff') format('woff'), url('MAGNETOB/MAGNETOB.ttf') format('truetype');
+}
+
+
+/* BODY */
+html, body {
+	width:100%;
+	height:100%;
+	margin:0;
+	text-align:center;
+	position:relative;
+	display:inline-block;
+	font-family:'Playfair Display', serif;}
+::selection {
+	background-color:#abd897;}
+a {
+	text-decoration:none;}
+	
+/* topbar */
+.topmenu{
+	background-color: #000000;
+	position:fixed;
+	z-index:9;
+	width: 100%;
+	height: auto;
+	top:0;
+	left:0;
+	opacity:0.8;}
+.nav{
+	text-align: center;
+	display: block;
+	padding:1em;}
+.nav a{
+	color:#fff;
+	font-family: 'Molengo', sans-serif;
+	font-size: 11pt;
+	letter-spacing:1pt;
+	text-decoration:none;
+	margin-left:2em;}
+.nav a:hover{
+	color: #174205;}
+li ul {
+	display: none;} 
+li:hover ul{
+	display: block;}
+ul {
+	list-style: none; 
+	padding: 0%;}
+li {
+	display: inline;}
+	
+	
+/*** pages ***/
+#one, #two, #three, #four, #five {
+	width:100%;
+	float:left;
+	position:relative;
+	font-family: 'MAGNETOB';
+	overflow:auto;
+	background-color:#000000;
+	background-size:auto 100%;}
+.head2, .head3, .head4, .head5 {
+	margin: 10%;
+	padding:0% 5% 0% 5%;
+	font-size:50pt;
+	letter-spacing:5pt;}
+.pp2, .pp3, .pp4, .pp5 {
+	line-height:250%;}
+
+#one {
+	height:100%;
+	background-color:#000000;}
+.head1 {
+	margin-top:30%;
+	letter-spacing: 0pt;
+	font-family: 'MAGNETOB';
+	font-size: 60pt;
+	color:#ffffff;
+}
+#two {
+	height:auto;
+	background-image: url("images/mustang-boss-302-trans-am.jpg");
+	background-position: center center;
+	background-size: 1500px 1000px;}
+.head2 {
+	margin: 7.5%;
+	font-size: 50pt;
+	letter-spacing: 0pt;
+	font-family: 'MAGNETOB';
+	color: #800909;}
+.pp2 {
+	font-family: 'MAGNETOB';
+	font-size: 14px;
+	color:#000000;}
+
+#three {
+	height:auto;
+	background-image:linear-gradient(to bottom, rgba(120, 196, 172, 0.7) 0%, rgba(120, 196, 172, 0.7) 100%), url("https://drive.google.com/uc?id=0B5wTzhSTZCxLa2J2N0VUNVZJTUk");
+	background-position: center bottom;}
+#t3 {
+	text-align:left;
+	float:left;}
+.head3 {
+	text-align:center;
+	text-shadow:5px 3px #044f46;}
+.pp3 {
+	margin:0% 10% 0% 10%;
+	text-align:center;
+	color:#044f46;
+	font-size:11pt;}
+
+#four {
+	height:100%;
+	background-size:auto 120%;
+	background-image:linear-gradient(to bottom, rgba(113, 155, 188, 0.8) 0%, rgba(113, 155, 188, 0.8) 100%), url("https://drive.google.com/uc?id=0B4e-hb8jKybhODQxMjZkVVBmQUU");
+	background-position:center top;}
+.head4 {
+	text-shadow:5px 3px #0d3656;}
+.pp4 {
+	margin:5% 25% 10% 25%;
+	color:#fff;}
+
+#five {
+	background-image:linear-gradient(to bottom, rgba(87, 70, 129, 0.7) 0%, rgba(87, 70, 129, 0.7) 100%), url("https://drive.google.com/uc?id=0B5wTzhSTZCxLLWUtSk1odXNMa2M");}
+#five a, #five a:active {
+	color:#9181c4;}
+#five a:hover{
+	color:#fff;
+	text-decoration:underline;}
+.head5 {
+	text-shadow:5px 3px #1e0d4c;}
+.pp5 {
+	color:#fff;}
+	
+	
+/**** responsive ****/
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	background-color:#800909;
+	float:left;
+	position: center;
+	margin: 1% 0 1% 1.6%;
+	padding-bottom:1%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;}
+.span_3_of_4 {
+	width: 74.6%;}
+.span_2_of_4 {
+	width: 49.2%;}
+.span_1_of_4 {
+	width: 23.8%;}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }}
+
+
